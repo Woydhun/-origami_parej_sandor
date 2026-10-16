@@ -1,54 +1,81 @@
-body{
+body {
     color: #333333;
+    background-color: #f4f1ea;
 }
 
-header{
+header {
     background-size: cover;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 30px;
+    background-image: url(..\img\borito.jpg) !important;
+    background-position: center;
 }
 
-h1{
+h1 {
     letter-spacing: 8px;
     color: white;
     text-shadow: 3px 3px 8px black;
     margin: 0;
+    font-size: 6rem;
+    text-transform: uppercase;
 }
 
-.alcim{
+.alcim {
     font-size: 1.6rem;
     color: white;
     text-shadow: 2px 2px 6px black;
 }
 
-nav{
+nav {
     position: sticky;
     top: 0;
     z-index: 10;
+    background-color: #B23A48;
+    border-bottom: 3px solid #7E2832;
 }
 
-.nav-link:hover{
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+section h2 {
+    text-align: left;
+    border: 8px solid #B23A48;
+    padding-left: 12px;
+}
+
+.nav-link:hover {
     color: #FFD166;
 }
 
-main{
+main {
     padding: 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-section{
+section {
     padding: 30px 0;
     border-bottom: 1px solid #D8CFC0;
 }
 
-section h2{
+section h2 {
     margin-bottom: 25px;
     color: #B23A48;
 }
 
-section .btn{
+section .btn {
     display: block;
     width: 250px;
     margin-left: auto;
@@ -56,37 +83,52 @@ section .btn{
     color: white;
 }
 
-section .btn:hover{
+section .btn:hover {
     background-color: #7E2832;
     color: white;
 }
 
-.card-title{
+.card-title {
     font-size: 1.3rem;
     color: #B23A48;
 }
 
-.card-text{
+th {
+    text-transform: uppercase;
+}
+
+.card-text {
     font-size: 0.95rem;
 }
 
-.table{
+.table {
     --bs-table-bg: #FFF8EC;
 }
 
-footer{
+footer {
     background-color: #2F2F2F;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-footer a{
+footer a {
     color: #FFD166;
 }
 
-@media screen and (max-width: 992px){
-    .alcim{
+@media screen and (max-width: 576) {
+    h1 {
+        font-size: 3.5rem;
+
+    }
+
+    section .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .alcim {
         font-size: 1.3rem;
     }
 }
